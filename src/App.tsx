@@ -50,8 +50,8 @@ const App = () => {
 
         <ul className='flex flex-col w-5/6 list-disc py-4'>
           <li className='list-outside font-semibold'>Day 6</li>
-          <li className='flex flex-grow justify-between list-none'><span>- part 1: </span> <span>⭐</span></li>
-          <li className='flex flex-grow justify-between list-none'><span>- part 2: </span> <span>⭐</span></li>
+          <li className='flex flex-grow justify-between list-none'><span>- part 1: 1804</span> <span>⭐</span></li>
+          <li className='flex flex-grow justify-between list-none'><span>- part 2: 2508</span> <span>⭐</span></li>
         </ul>
 
       </div>
