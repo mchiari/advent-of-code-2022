@@ -46,13 +46,39 @@ export const day5 = async () => {
 
 
     const part2 = () => {
+        for (let row = 10; row < data.length; row++) {
+        // for (let row = 10; row < 15; row++) {
+            let qttyToMove = parseInt(data[row].substring(5, data[row].charAt(6) !== ' ' ? 7 : 6))
+            let indexToMove = parseInt(data[row].charAt(data[row].charAt(6) !== ' ' ? 13 : 12))
+            let indexToReceive = parseInt(data[row].charAt(data[row].charAt(6) !== ' ' ? 18 : 17))
+
+
+            // for (let i = 1; i <= qttyToMove; i++) {
+            // let removedArray = stacks[indexToMove].slice(stacks[indexToMove].length - qttyToMove)
+            // console.log(removedArray)
+            // console.log('from ', indexToMove + 1)
+            // console.log('to ', indexToReceive + 1)
+            // stacks[indexToReceive].push(removed)
+            // }
+
+            // for (let i = 0; i < qttyToMove; i++) {
+            // stacks[indexToReceive].push(removedArray[i])
+            // console.log(removedArray[i])
+            // }
 
 
 
-        console.log(stacks)
+            let removedArray = []
+            for (let i = 1; i <= qttyToMove; i++) {
+                removedArray.push(stacks[indexToMove - 1].pop())
+            }
+            console.log(removedArray)
 
+            stacks[indexToReceive-1] = stacks[indexToReceive-1].concat(removedArray.reverse())
+
+            // console.log(stacks)
+        }
     }
-
 
     // part1()
     part2()
