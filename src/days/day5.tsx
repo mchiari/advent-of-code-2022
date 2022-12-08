@@ -68,13 +68,13 @@ export const day5 = async () => {
 
 
 
-            let removedArray = []
+            let removedArray: string[] = []
             for (let i = 1; i <= qttyToMove; i++) {
-                removedArray.push(stacks[indexToMove - 1].pop())
+                removedArray.push(stacks[indexToMove - 1].pop()!)
             }
             console.log(removedArray)
 
-            stacks[indexToReceive-1] = stacks[indexToReceive-1].concat(removedArray.reverse())
+            stacks[indexToReceive-1] = stacks[indexToReceive-1].concat(removedArray!.reverse())
 
             // console.log(stacks)
         }
