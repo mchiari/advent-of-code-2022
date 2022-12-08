@@ -42,6 +42,12 @@ const App = () => {
           <li className='flex flex-grow justify-between list-none'><span>- part 2: 911</span> <span>⭐</span></li>
         </ul>
 
+        <ul className='flex flex-col w-5/6 list-disc py-4'>
+          <li className='list-outside font-semibold'>Day 5</li>
+          <li className='flex flex-grow justify-between list-none'><span>- part 1: JRVNHHCSJ</span> <span>⭐</span></li>
+          <li className='flex flex-grow justify-between list-none'><span>- part 2: </span> <span>⭐</span></li>
+        </ul>
+
       </div>
     </div>
   )
